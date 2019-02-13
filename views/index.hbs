@@ -1,4 +1,6 @@
-<h1>{{ title }}</h1>
-<p>{{store.snippet}}</p>
-<p>{{store.date}}</p>
-<a href>{{store.url}}</a>
+
+<ul>
+  {{#each store}}
+    <li>{{this.snippet}}</li>
+  {{/each}}
+</ul>
